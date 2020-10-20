@@ -5,7 +5,7 @@ image_format:'png',
 png_quality:90,
 
    constraints: {
-facing_mode:environment
+facing_mode:"environment"
  }
 });
 
@@ -14,7 +14,7 @@ Webcam.attach('#camera');
 
 function take_snapshot() {
     Webcam.snap(function(data_uri) {
-        document.getElementById("result").innerHTML='<img id="captured_image" src="'+data_uri+'"/>';
+        document.getElementById("result").innerHTML = ' <img id="captured_image" src=" ' +data_uri+ ' "> ';
     });
 }
 
